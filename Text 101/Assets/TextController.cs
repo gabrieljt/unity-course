@@ -19,6 +19,8 @@ public class TextController : MonoBehaviour {
 				" para enxergar o contorno de alguns objetos no quarto. Nao se lembra de nada antes de acordar" +
 				" e com algum esforco consegue se lembrar do seu nome. Passados uns minutos, decide se levantar." +
 				" O quarto e pequeno. Alem da fresta na parede, voce avista um bau num canto do quarto, uma mesa" +
-				" e um espelho pendurado na parede. Nao parece haver uma porta...";
+				" e um espelho pendurado na parede. Nao parece haver uma porta...\n\n" +
+				" Pressione F para observar a Fresta; B para observar o Bau; M para observar a Mesa; E" +
+				" para observar o Espelho.";
 	}
 }
