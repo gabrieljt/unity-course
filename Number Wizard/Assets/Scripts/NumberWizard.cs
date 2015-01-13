@@ -4,25 +4,30 @@ using System.Collections;
 public class NumberWizard : MonoBehaviour {
 
 	// Use this for initialization
-	int max = 1000;
-	int min = 1;
-	int guess = 500;
+	int max;
+	int min;
+	int guess;
 	
 	void Start () {
 		StartGame();
 	}
 
 	void StartGame () {
+		print ("==========================");
 		print ("Welcome to Number Wizard!");
 		print ("Pick a number in your head, but don't tell me...");
 		
 		Debug.Log (string.Format("The highest number you can pick is {0}.", max));
 		Debug.Log (string.Format("The lowest number you can pick is {0}.", min));
 		
-		// Round up
-		++max;
-		
+		Setup();
 		Guess();
+	}
+
+	void Setup() {
+		max = 1001;
+		min = 1;
+		guess = 500;
 	}
 	
 	// Update is called once per frame
@@ -34,7 +39,8 @@ public class NumberWizard : MonoBehaviour {
 			max = guess;
 			NextGuess();
 		} else if (Input.GetKeyDown(KeyCode.Return)) {
-			print ("I won!");	
+			print ("I won!");
+			StartGame();
 		}
 	}
 	
