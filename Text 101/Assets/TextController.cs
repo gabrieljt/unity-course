@@ -17,7 +17,8 @@ public class TextController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		print (myState);
-		if (myState == States.cell) {cell();}
+
+		if 		(myState == States.cell) {cell();}
 		else if (myState == States.sheets_0) {sheets_0();}
 		else if (myState == States.sheets_1) {sheets_1();}
 		else if (myState == States.lock_0) {lock_0();}
@@ -42,7 +43,8 @@ public class TextController : MonoBehaviour {
 				"some dirty sheets on the bed, a mirror on the wall, and the door " +
 				"is locked from the outside.\n\n" +
 				"Press S to view Sheets, M to view Mirror and L to view Lock" ;
-		if (Input.GetKeyDown(KeyCode.S)) {myState = States.sheets_0;}
+
+		if 		(Input.GetKeyDown(KeyCode.S)) {myState = States.sheets_0;}
 		else if (Input.GetKeyDown(KeyCode.M)) {myState = States.mirror;}
 		else if (Input.GetKeyDown(KeyCode.L)) {myState = States.lock_0;}
 	}
@@ -50,7 +52,8 @@ public class TextController : MonoBehaviour {
 	void mirror() {
 		text.text = "The dirty old mirror on the wall seems loose.\n\n" +
 				"Press T to Take the mirror, or R to Return to cell" ;
-		if (Input.GetKeyDown(KeyCode.T)) {myState = States.cell_mirror;}
+
+		if 		(Input.GetKeyDown(KeyCode.T)) {myState = States.cell_mirror;}
 		else if (Input.GetKeyDown(KeyCode.R)) {myState = States.cell;}
 	}
 
@@ -59,6 +62,7 @@ public class TextController : MonoBehaviour {
 				"time somebody changed them. The pleasures of prison life " +
 				"I guess!\n\n" +
 				"Press R to Return to roaming your cell" ;
+
 		if (Input.GetKeyDown(KeyCode.R)) {myState = States.cell;}
 	}
 
@@ -66,6 +70,7 @@ public class TextController : MonoBehaviour {
 		text.text = "Holding a mirror in your hand doesn't make the sheets look " +
 				"any better.\n\n" +
 				"Press R to Return to roaming your cell" ;
+
 		if (Input.GetKeyDown(KeyCode.R)) {myState = States.cell_mirror;}
 	}
 
@@ -74,6 +79,7 @@ public class TextController : MonoBehaviour {
 				"combination is. You wish you could somehow see where the dirty " +
 				"fingerprints were, maybe that would help.\n\n" +
 				"Press R to Return to roaming your cell" ;
+
 		if (Input.GetKeyDown(KeyCode.R)) {myState = States.cell;}
 	}
 
@@ -82,7 +88,8 @@ public class TextController : MonoBehaviour {
 				"so you can see the lock. You can just make out fingerprints around " +
 				"the buttons. You press the dirty buttons, and hear a click.\n\n" +
 				"Press O to Open, or R to Return to your cell" ;
-		if (Input.GetKeyDown(KeyCode.O)) {myState = States.corridor_0;}
+
+		if 		(Input.GetKeyDown(KeyCode.O)) {myState = States.corridor_0;}
 		else if (Input.GetKeyDown(KeyCode.R)) {myState = States.cell_mirror;}
 	}
 
@@ -91,14 +98,16 @@ public class TextController : MonoBehaviour {
 				"some dirty sheets on the bed, a mark where the mirror was, " +
 				"and that pesky door is still there, and firmly locked!\n\n" +
 				"Press S to view Sheets, or L to view Lock" ;
-		if (Input.GetKeyDown(KeyCode.S)) {myState = States.sheets_1;}
+
+		if 		(Input.GetKeyDown(KeyCode.S)) {myState = States.sheets_1;}
 		else if (Input.GetKeyDown(KeyCode.L)) {myState = States.lock_1;}
 	}
 
 	void corridor_0() {
 		text.text = "You are now in a dark corridor, but you manage to see a closet to your left and a stairway to your right. " +
 				"Press S view the Stairs, C to view the Closet or F to look at the Floor";
-		if (Input.GetKeyDown(KeyCode.S)) {myState = States.stairs_0;}
+
+		if 		(Input.GetKeyDown(KeyCode.S)) {myState = States.stairs_0;}
 		else if (Input.GetKeyDown(KeyCode.C)) {myState = States.closet_door;}
 		else if (Input.GetKeyDown(KeyCode.F)) {myState = States.floor;}
 	}
@@ -134,6 +143,7 @@ public class TextController : MonoBehaviour {
 	void courtyard() {
 		text.text = "You are FREE!\n\n" +
 			"Press P to Play again";
+
 		if (Input.GetKeyDown(KeyCode.P)) {myState = States.cell;}
 	}
 }
