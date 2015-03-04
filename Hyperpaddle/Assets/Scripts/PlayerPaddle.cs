@@ -17,9 +17,8 @@ public class PlayerPaddle : MonoBehaviour {
 	}
 
 	Vector3 GetMouseCoordinatesAtDistance () {
-		Vector3 mousePosition = Input.mousePosition;
-		float mouseX = mousePosition.x;
-		float mouseY = mousePosition.y;
+		float mouseX = Input.mousePosition.x;
+		float mouseY = Input.mousePosition.y;
 
 		Vector3 screenPosition = new Vector3(mouseX, mouseY, cameraToPaddleDistance);		
 		Vector3 worldPosition = camera.ScreenToWorldPoint(screenPosition);
