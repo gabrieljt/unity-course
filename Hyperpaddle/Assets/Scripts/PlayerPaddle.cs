@@ -4,11 +4,11 @@ using System.Collections;
 public class PlayerPaddle : MonoBehaviour {
 
 	public Camera camera;
-	private float worldUnitsFromCamera;
+	private float cameraToPaddleDistance;
 
 	// Use this for initialization
 	void Start () {
-		worldUnitsFromCamera = transform.position.z - camera.transform.position.z;
+		cameraToPaddleDistance = transform.position.z - camera.transform.position.z;
 	}
 
 	void OnMouseDrag () {
@@ -21,7 +21,7 @@ public class PlayerPaddle : MonoBehaviour {
 		float mouseX = mousePosition.x;
 		float mouseY = mousePosition.y;
 
-		Vector3 screenPosition = new Vector3 (mouseX, mouseY, worldUnitsFromCamera);		
+		Vector3 screenPosition = new Vector3 (mouseX, mouseY, cameraToPaddleDistance);		
 		Vector3 worldPosition = camera.ScreenToWorldPoint(screenPosition);
 
 		return worldPosition;
