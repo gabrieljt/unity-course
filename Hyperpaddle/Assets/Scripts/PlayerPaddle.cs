@@ -17,7 +17,8 @@ public class PlayerPaddle : MonoBehaviour {
 		float mouseY = mousePosition.y;
 		Vector3 screenPosition = new Vector3 (mouseX, mouseY, worldUnitsFromCamera);
 
-		print (screenPosition);
+		Vector3 worldPosition = camera.ScreenToWorldPoint(screenPosition);
+		transform.position = worldPosition;
 	}
 	
 	// Update is called once per frame
