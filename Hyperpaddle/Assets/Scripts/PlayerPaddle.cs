@@ -21,14 +21,20 @@ public class PlayerPaddle : MonoBehaviour {
 		float mouseX = mousePosition.x;
 		float mouseY = mousePosition.y;
 
-		Vector3 screenPosition = new Vector3 (mouseX, mouseY, cameraToPaddleDistance);		
+		Vector3 screenPosition = new Vector3(mouseX, mouseY, cameraToPaddleDistance);		
 		Vector3 worldPosition = camera.ScreenToWorldPoint(screenPosition);
 
 		return worldPosition;
 	}
 
-	void MovePaddleTo (Vector3 position) {
-		transform.position = position;
+	void MovePaddleTo (Vector3 worldPosition) {
+		Vector3 moveTo;
+
+		moveTo.x = Mathf.Clamp(worldPosition.x, -7.5f, 7.5f);
+		moveTo.y = Mathf.Clamp(worldPosition.y, -7.5f, 7.5f);
+		moveTo.z = worldPosition.z;
+
+		transform.position = moveTo;
 	}
 	
 	// Update is called once per frame

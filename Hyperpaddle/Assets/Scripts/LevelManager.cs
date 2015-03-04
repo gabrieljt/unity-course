@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour {
 	}
 	
 	public void QuitReqest () {
-		print ("Level Manager QuitReqest called");
+		print("Level Manager QuitReqest called");
 		Application.Quit();
 	}
 }
