@@ -7,7 +7,6 @@ public class Ball : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		startVelocity = new Vector3(0.0f, 0.0f, -40.0f);
 		rigidbody.velocity = startVelocity;
 	}
 
