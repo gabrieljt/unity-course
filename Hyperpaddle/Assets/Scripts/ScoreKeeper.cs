@@ -13,7 +13,7 @@ public class ScoreKeeper : MonoBehaviour {
 		scoreText.text = score.ToString();
 	}
 
-	void Add (int points) {
+	public void Add (int points) {
 		score += points;
 		scoreText.text = score.ToString();
 	}

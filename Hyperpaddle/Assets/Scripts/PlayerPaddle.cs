@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerPaddle : MonoBehaviour {
 
+	public ScoreKeeper scoreKeeper;
 	public Camera camera;
 	private float cameraToPaddleDistance;
 
@@ -35,9 +36,12 @@ public class PlayerPaddle : MonoBehaviour {
 
 		transform.position = moveTo;
 	}
+
+	void OnCollisionEnter (Collision collision) {
+		scoreKeeper.Add(1);
+	}
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 }
