@@ -4,9 +4,10 @@ using System.Collections;
 public class Ball : MonoBehaviour {
 
 	[Range (1f, 1.2f)]
-	public float speedMultiplier;
+	public float speedMultiplier = 1f;
 
 	public Vector3 startVelocity;
+	public Vector3 funnyBounce;
 
 	void Start () {
 		rigidbody.velocity = startVelocity;
@@ -16,7 +17,9 @@ public class Ball : MonoBehaviour {
 		Vector3 velocity = rigidbody.velocity;
 		velocity.z *= speedMultiplier;
 
-		rigidbody.velocity = velocity;
+		funnyBounce.x = Random.Range(-5f, 5f);
+		funnyBounce.y = Random.Range(-5f, 5f);
+		rigidbody.velocity = velocity + funnyBounce;
 	}
 
 	void OnCollisionEnter () {
