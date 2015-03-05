@@ -4,18 +4,26 @@ using System.Collections.Generic;
 
 public class Scoreboard : MonoBehaviour {
 
-	void SetCurrentScore (int score) {
+	public static int currentTopScore = 0;
+	public static SortedList<int, string> topScores = new SortedList<int, string>();
+
+	public void SetCurrentScore (int score) {
+		currentTopScore = score;
 	}
 
-	public bool IsHighScore (int score) {
-		return true;
+	public int GetCurrentScore () {
+		return currentTopScore;
+	}
+
+	public bool IsTopScore (int score) {
+		return (score > currentTopScore) ? true : false;
 	}
 
 	public void ClaimCurrentScore (string name) {
-		print (name);
+		topScores.Add(currentTopScore, name);
 	}
 
-	SortedList<int, string> GetScores () {
-		return new SortedList<int, string>();
+	public SortedList<int, string> GetScores () {
+		return topScores;
 	}
 }
