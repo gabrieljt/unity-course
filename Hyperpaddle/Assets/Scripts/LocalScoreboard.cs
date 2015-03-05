@@ -19,7 +19,6 @@ public class LocalScoreboard : MonoBehaviour {
 
 	public void SetCurrentScore (int score) {
 		scoreData.currentTopScore = score;
-		WriteData();
 	}
 	
 	public int GetCurrentScore () {
@@ -32,7 +31,6 @@ public class LocalScoreboard : MonoBehaviour {
 	
 	public void ClaimCurrentScore (string name) {
 		scoreData.topScores.Add(scoreData.currentTopScore, name);
-		WriteData();
 	}
 	
 	public SortedList<int, string> GetScores () {
@@ -72,7 +70,7 @@ public class LocalScoreboard : MonoBehaviour {
 		WriteData();
 	}
 
-	void OnApplicationDestroy () {
+	void OnDestroy () {
 		WriteData();
 	}
 }
