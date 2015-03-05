@@ -12,8 +12,7 @@ public class Scoreboard : MonoBehaviour {
 	}
 
 	public void ClaimCurrentScore (string name) {
-		print(name);
-		Debug.Log(name);
+		print (name);
 	}
 
 	SortedList<int, string> GetScores () {
