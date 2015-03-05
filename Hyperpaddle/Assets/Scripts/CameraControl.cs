@@ -16,4 +16,11 @@ public class CameraControl : MonoBehaviour {
 		
 		transform.position = moveTo;
 	}
+
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.UpArrow))
+			factor = Mathf.Clamp(factor + 0.05f, 0.05f, 0.5f);
+		else if (Input.GetKeyDown(KeyCode.DownArrow))
+			factor = Mathf.Clamp(factor - 0.05f, 0.05f, 0.5f);
+	}
 }

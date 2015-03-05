@@ -5,7 +5,6 @@ public class AIPaddle : MonoBehaviour {
 
 	private Ball ball;
 
-	// Use this for initialization
 	void Start () {
 		ball = FindObjectOfType<Ball>() as Ball;
 	}
@@ -20,7 +19,6 @@ public class AIPaddle : MonoBehaviour {
 		transform.position = moveTo;
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		MovePaddleToBallPosition2D();
 	}

@@ -8,7 +8,6 @@ public class PlayerPaddle : MonoBehaviour {
 	private float cameraToPaddleDistance;
 	private CameraControl cameraControl;
 
-	// Use this for initialization
 	void Start () {
 		cameraToPaddleDistance = transform.position.z - camera.transform.position.z;
 		cameraControl = camera.GetComponent<CameraControl>() as CameraControl;
@@ -42,9 +41,5 @@ public class PlayerPaddle : MonoBehaviour {
 
 	void OnCollisionEnter () {
 		scoreKeeper.Add(1);
-	}
-	
-	// Update is called once per frame
-	void Update () {
 	}
 }
