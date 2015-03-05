@@ -6,15 +6,18 @@ public class PlayerPaddle : MonoBehaviour {
 	public ScoreKeeper scoreKeeper;
 	public Camera camera;
 	private float cameraToPaddleDistance;
+	private CameraControl cameraControl;
 
 	// Use this for initialization
 	void Start () {
 		cameraToPaddleDistance = transform.position.z - camera.transform.position.z;
+		cameraControl = camera.GetComponent<CameraControl>() as CameraControl;
 	}
 
 	void OnMouseDrag () {
 		Vector3 mousePosition = GetMouseCoordinatesAtDistance();
 		MovePaddleTo(mousePosition);
+		cameraControl.ShiftAroundPaddle(mousePosition);		
 	}
 
 	Vector3 GetMouseCoordinatesAtDistance () {
