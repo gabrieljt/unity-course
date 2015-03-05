@@ -6,7 +6,7 @@ public class NameEntry : MonoBehaviour {
 
 	public InputField inputField;
 	public Button button;
-	public Scoreboard scoreboard;
+	public LocalScoreboard scoreboard;
 	public LevelManager levelManager;
 
 	void Start () {

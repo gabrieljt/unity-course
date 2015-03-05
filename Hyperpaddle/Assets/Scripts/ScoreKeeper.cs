@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ScoreKeeper : MonoBehaviour {
 
 	public LevelManager levelManager;
-	public Scoreboard scoreboard;
+	public LocalScoreboard scoreboard;
 	public Text currentScoreText;
 	public Text topScoreText;
 	private int score = 0;

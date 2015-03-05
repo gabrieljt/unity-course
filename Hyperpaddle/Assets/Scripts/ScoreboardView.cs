@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class ScoreboardView : MonoBehaviour {
 
-	public Scoreboard scoreboard;
+	public LocalScoreboard scoreboard;
 	public Text scoresText;
 
 	void Start () {
