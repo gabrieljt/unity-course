@@ -3,23 +3,19 @@ using System.Collections;
 
 public class AIPaddle : MonoBehaviour {
 
-	public GameObject ball;
-	private Vector3 ballPosition;
+	private Ball ball;
 
 	// Use this for initialization
 	void Start () {
-		MovePaddleToBallPosition2D();
+		ball = FindObjectOfType<Ball>() as Ball;
 	}
 
 	void MovePaddleToBallPosition2D () {
-		ballPosition = ball.transform.position;	
-		ballPosition.z = transform.position.z;
-
 		Vector3 moveTo;
 		
-		moveTo.x = Mathf.Clamp(ballPosition.x, -7.5f, 7.5f);
-		moveTo.y = Mathf.Clamp(ballPosition.y, -7.5f, 7.5f);
-		moveTo.z = ballPosition.z;
+		moveTo.x = Mathf.Clamp(ball.transform.position.x, -7.5f, 7.5f);
+		moveTo.y = Mathf.Clamp(ball.transform.position.y, -7.5f, 7.5f);
+		moveTo.z = transform.position.z;
 		
 		transform.position = moveTo;
 	}
