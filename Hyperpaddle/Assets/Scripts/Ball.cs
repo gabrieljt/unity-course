@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Ball : MonoBehaviour {
 
-	[Range (1f, 1.2f)]
-	public float speedMultiplier = 1f;
+	[Range (1f, 1.1f)]
+	public float speedMultiplier = 1.03f;
 
-	public Vector3 startVelocity;
-	public Vector3 funnyBounce;
+	public Vector3 startVelocity = new Vector3(2.5f, 2.5f, -20f);
+	public Vector3 funnyBounce = new Vector3(0f, 0f, 0f);
 
 	void Start () {
 		rigidbody.velocity = startVelocity;
@@ -29,8 +29,8 @@ public class Ball : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.RightArrow))
-			speedMultiplier = Mathf.Clamp(speedMultiplier + 0.01f, 1f, 1.2f);
+			speedMultiplier = Mathf.Clamp(speedMultiplier + 0.01f, 1f, 1.1f);
 		else if (Input.GetKeyDown(KeyCode.LeftArrow))
-			speedMultiplier = Mathf.Clamp(speedMultiplier - 0.01f, 1f, 1.2f);
+			speedMultiplier = Mathf.Clamp(speedMultiplier - 0.01f, 1f, 1.1f);
 	}
 }
