@@ -4,14 +4,13 @@ using System.Collections;
 public class CameraControl : MonoBehaviour {
 
 	[Range (0.05f, 0.5f)]
-
-	public float factor;
+	public float shiftMultiplier;
 
 	public void ShiftAroundPaddle (Vector3 position) {
 		Vector3 moveTo;
 		
-		moveTo.x = Mathf.Clamp(position.x * factor, -10f, 10f);
-		moveTo.y = Mathf.Clamp(position.y * factor, -10f, 10f);
+		moveTo.x = Mathf.Clamp(position.x * shiftMultiplier, -10f, 10f);
+		moveTo.y = Mathf.Clamp(position.y * shiftMultiplier, -10f, 10f);
 		moveTo.z = transform.position.z;
 		
 		transform.position = moveTo;
@@ -19,8 +18,8 @@ public class CameraControl : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.UpArrow))
-			factor = Mathf.Clamp(factor + 0.05f, 0.05f, 0.5f);
+			shiftMultiplier = Mathf.Clamp(shiftMultiplier + 0.05f, 0.05f, 0.5f);
 		else if (Input.GetKeyDown(KeyCode.DownArrow))
-			factor = Mathf.Clamp(factor - 0.05f, 0.05f, 0.5f);
+			shiftMultiplier = Mathf.Clamp(shiftMultiplier - 0.05f, 0.05f, 0.5f);
 	}
 }
