@@ -10,6 +10,10 @@ public class Ball : MonoBehaviour {
 		rigidbody.velocity = startVelocity;
 	}
 
+	void OnCollisionEnter () {
+		audio.Play();
+	}
+
 	// Update is called once per frame
 	void Update () {
 	}

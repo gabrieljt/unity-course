@@ -37,7 +37,7 @@ public class PlayerPaddle : MonoBehaviour {
 		transform.position = moveTo;
 	}
 
-	void OnCollisionEnter (Collision collision) {
+	void OnCollisionEnter () {
 		scoreKeeper.Add(1);
 	}
 	
