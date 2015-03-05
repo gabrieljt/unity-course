@@ -8,6 +8,10 @@ public class LoseCollider : MonoBehaviour {
 
 	void OnTriggerEnter () {
 		audio.Play();
-		scoreKeeper.BallOut();
+		Invoke("NotifyScoreKeeper", 2);
+	}
+
+	void NotifyScoreKeeper () {
+		scoreKeeper.BallOut();		
 	}
 }
