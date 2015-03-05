@@ -1,10 +1,14 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 using System.IO;
+using System;
 
 public class LocalScoreboard : MonoBehaviour {
 
+	[Serializable]
 	private class ScoreboardData {
 		public int currentTopScore = 0;
 		public SortedList<int, string> topScores = new SortedList<int, string>();
@@ -35,39 +39,41 @@ public class LocalScoreboard : MonoBehaviour {
 
 	void Awake () {
 		scoreData = new ScoreboardData();
-		filePath = Path.Combine(Application.persistentDataPath, "hyperpaddle-scores.txt");
+		filePath = Path.Combine(Application.persistentDataPath, "hyperpaddle-scores.bin");
 		ReadData();
 	}
 
 	void ReadData () {
+		IFormatter binaryFormatter = new BinaryFormatter();
+
 		try {
 			Stream file = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-			StreamReader fileReader = new StreamReader(file);
-			fileReader.Close();
+			scoreData = (ScoreboardData)binaryFormatter.Deserialize(file);
+			Debug.Log(scoreData.currentTopScore);
+			file.Close();
 		} catch(IOException e) {
 			Debug.LogError(e);
+			WriteData();
 		}
 	}
 
-	void WriteData (string data) {
-		if (string.IsNullOrEmpty(data))
-			data = "No scores available.";
+	void WriteData () {
+		IFormatter binaryFormatter = new BinaryFormatter();
 
 		try {
 			Stream file = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-			StreamWriter fileWriter = new StreamWriter(file);
-			fileWriter.Write(data);
-			fileWriter.Close();
+			binaryFormatter.Serialize(file, scoreData);
+			file.Close();
 		} catch(IOException e) {
 			Debug.LogError(e);
 		}
 	}
 
 	void OnApplicationPause () {
-		WriteData("");
+		WriteData();
 	}
 
 	void OnApplicationDestroy () {
-		WriteData("");
+		WriteData();
 	}
 }
