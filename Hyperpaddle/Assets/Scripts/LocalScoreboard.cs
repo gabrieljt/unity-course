@@ -12,19 +12,27 @@ public class LocalScoreboard : MonoBehaviour {
 	}
 
 	void ReadData () {
-		Stream file = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-		StreamReader fileReader = new StreamReader(file);
-		fileReader.Close();
+		try {
+			Stream file = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+			StreamReader fileReader = new StreamReader(file);
+			fileReader.Close();
+		} catch(IOException e) {
+			Debug.LogError(e);
+		}
 	}
 
 	void WriteData (string data) {
 		if (string.IsNullOrEmpty(data))
 			data = "No scores available.";
 
-		Stream file = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-		StreamWriter fileWriter = new StreamWriter(file);
-		fileWriter.Write(data);
-		fileWriter.Close();
+		try {
+			Stream file = new FileStream(filePath, FileMode.Create, FileAccess.Write);
+			StreamWriter fileWriter = new StreamWriter(file);
+			fileWriter.Write(data);
+			fileWriter.Close();
+		} catch(IOException e) {
+			Debug.LogError(e);
+		}
 	}
 
 	void OnApplicationPause () {
