@@ -17,7 +17,6 @@ public class ScoreboardView : MonoBehaviour {
 			foreach(KeyValuePair<int, string> playerScore in scores.Reverse().Take(5)) {
 				playerScores += string.Format("{0} <{1}>\n", playerScore.Value, playerScore.Key);
 			}
-
 			scoresText.text = playerScores;
 		} else {
 			scoresText.text = "Well... why don't you be the first?";

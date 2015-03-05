@@ -19,6 +19,7 @@ public class LocalScoreboard : MonoBehaviour {
 
 	public void SetCurrentScore (int score) {
 		scoreData.currentTopScore = score;
+		WriteData();
 	}
 	
 	public int GetCurrentScore () {
@@ -31,6 +32,7 @@ public class LocalScoreboard : MonoBehaviour {
 	
 	public void ClaimCurrentScore (string name) {
 		scoreData.topScores.Add(scoreData.currentTopScore, name);
+		WriteData();
 	}
 	
 	public SortedList<int, string> GetScores () {
@@ -38,8 +40,7 @@ public class LocalScoreboard : MonoBehaviour {
 	}
 
 	void Awake () {
-		scoreData = new ScoreboardData();
-		filePath = Path.Combine(Application.persistentDataPath, "hyperpaddle-scores.bin");
+		filePath = Path.Combine(Application.persistentDataPath, "hyperpaddle-scores.txt");
 		ReadData();
 	}
 
@@ -48,12 +49,10 @@ public class LocalScoreboard : MonoBehaviour {
 
 		try {
 			Stream file = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-			scoreData = (ScoreboardData)binaryFormatter.Deserialize(file);
-			Debug.Log(scoreData.currentTopScore);
+			scoreData = binaryFormatter.Deserialize(file) as ScoreboardData;
 			file.Close();
 		} catch(IOException e) {
-			Debug.LogError(e);
-			WriteData();
+			Debug.LogException(e);
 		}
 	}
 
@@ -65,7 +64,7 @@ public class LocalScoreboard : MonoBehaviour {
 			binaryFormatter.Serialize(file, scoreData);
 			file.Close();
 		} catch(IOException e) {
-			Debug.LogError(e);
+			Debug.LogException(e);
 		}
 	}
 
