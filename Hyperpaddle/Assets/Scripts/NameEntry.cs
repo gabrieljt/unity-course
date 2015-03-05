@@ -5,22 +5,19 @@ using System.Collections;
 public class NameEntry : MonoBehaviour {
 
 	public InputField inputField;
-	public Button submit;
+	public Button button;
 	public Scoreboard scoreboard;
+	public LevelManager levelManager;
 
-	// Use this for initialization
 	void Start () {
-		submit.onClick.AddListener(OnSubmitName);
+		button.onClick.AddListener(OnSubmitName);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-	}
-
 	void OnSubmitName () {
-		string name = inputField.text;
-		if (!string.IsNullOrEmpty(name))
-			scoreboard.ClaimCurrentScore(name);
+		string playerName = inputField.text;
+		if (!string.IsNullOrEmpty(playerName)) {
+			scoreboard.ClaimCurrentScore(playerName);
+			levelManager.LoadLevel("Score Table");
+		}
 	}
 }

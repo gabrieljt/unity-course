@@ -8,7 +8,7 @@ public class Scoreboard : MonoBehaviour {
 	}
 
 	public bool IsHighScore (int score) {
-		return false;
+		return true;
 	}
 
 	public void ClaimCurrentScore (string name) {
