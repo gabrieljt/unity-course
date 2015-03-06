@@ -12,459 +12,77 @@ Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddl
 Loading E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.090 seconds
+- Completed reload, in  0.113 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 5.176352 ms
-Error deserializing scores file.
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-SerializationException: Unexpected binary element: 255
-  at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ReadObject (BinaryElement element, System.IO.BinaryReader reader, System.Int64& objectId, System.Object& value, System.Runtime.Serialization.SerializationInfo& info) [0x00000] in <filename unknown>:0 
-  at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ReadNextObject (BinaryElement element, System.IO.BinaryReader reader) [0x00000] in <filename unknown>:0 
-  at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ReadObjectGraph (BinaryElement elem, System.IO.BinaryReader reader, Boolean readHeaders, System.Object& result, System.Runtime.Remoting.Messaging.Header[]& headers) [0x00000] in <filename unknown>:0 
-  at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.NoCheckDeserialize (System.IO.Stream serializationStream, System.Runtime.Remoting.Messaging.HeaderHandler handler) [0x00000] in <filename unknown>:0 
-  at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize (System.IO.Stream serializationStream) [0x00000] in <filename unknown>:0 
-  at LocalScoreboard.ReadData () [0x00000] in <filename unknown>:0 
-UnityEngine.Debug:Internal_LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-LocalScoreboard:ReadData()
-LocalScoreboard:Awake()
- 
-(Filename:  Line: -1)
-
+UnloadTime: 4.440785 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 230.
-Total: 0.896161 ms (FindLiveObjects: 0.022148 ms CreateObjectMapping: 0.014481 ms MarkObjects: 0.163983 ms  DeleteObjects: 0.006814 ms)
+Total: 0.801181 ms (FindLiveObjects: 0.023426 ms CreateObjectMapping: 0.014055 ms MarkObjects: 0.153336 ms  DeleteObjects: 0.006389 ms)
 
 Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-UnloadTime: 56.617451 ms
+UnloadTime: 49.856396 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 169.
-Total: 0.960902 ms (FindLiveObjects: 0.021722 ms CreateObjectMapping: 0.014055 ms MarkObjects: 0.205725 ms  DeleteObjects: 0.123520 ms)
+Total: 0.889349 ms (FindLiveObjects: 0.014481 ms CreateObjectMapping: 0.014055 ms MarkObjects: 0.188262 ms  DeleteObjects: 0.116279 ms)
 
 Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-UnloadTime: 3.503291 ms
+UnloadTime: 3.593602 ms
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 162.
-Total: 0.798622 ms (FindLiveObjects: 0.011500 ms CreateObjectMapping: 0.013629 ms MarkObjects: 0.172502 ms  DeleteObjects: 0.010648 ms)
+Total: 0.770514 ms (FindLiveObjects: 0.010648 ms CreateObjectMapping: 0.014055 ms MarkObjects: 0.172077 ms  DeleteObjects: 0.010648 ms)
 
 Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-UnloadTime: 2.455924 ms
+UnloadTime: 2.398006 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 159.
-Total: 0.777752 ms (FindLiveObjects: 0.010648 ms CreateObjectMapping: 0.014055 ms MarkObjects: 0.179317 ms  DeleteObjects: 0.004259 ms)
+Total: 0.756884 ms (FindLiveObjects: 0.009796 ms CreateObjectMapping: 0.013629 ms MarkObjects: 0.187410 ms  DeleteObjects: 0.003407 ms)
 
-UnloadTime: 0.519211 ms
+UnloadTime: 0.548176 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 235.
-Total: 0.820345 ms (FindLiveObjects: 0.016611 ms CreateObjectMapping: 0.014481 ms MarkObjects: 0.170798 ms  DeleteObjects: 0.004685 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 162.
+Total: 0.763699 ms (FindLiveObjects: 0.011500 ms CreateObjectMapping: 0.014481 ms MarkObjects: 0.172929 ms  DeleteObjects: 0.004259 ms)
 
 Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-UnloadTime: 2.875893 ms
+UnloadTime: 2.531324 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 162.
-Total: 0.994551 ms (FindLiveObjects: 0.010222 ms CreateObjectMapping: 0.019592 ms MarkObjects: 0.212966 ms  DeleteObjects: 0.109038 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 159.
+Total: 0.820348 ms (FindLiveObjects: 0.008518 ms CreateObjectMapping: 0.018741 ms MarkObjects: 0.187836 ms  DeleteObjects: 0.003407 ms)
 
-UnloadTime: 0.728769 ms
+UnloadTime: 0.551584 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 238.
-Total: 0.791807 ms (FindLiveObjects: 0.017463 ms CreateObjectMapping: 0.015333 ms MarkObjects: 0.170798 ms  DeleteObjects: 0.004685 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 162.
+Total: 0.761143 ms (FindLiveObjects: 0.011500 ms CreateObjectMapping: 0.013629 ms MarkObjects: 0.174206 ms  DeleteObjects: 0.003833 ms)
 
 Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-UnloadTime: 2.656112 ms
+UnloadTime: 2.526213 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 165.
-Total: 0.886364 ms (FindLiveObjects: 0.008944 ms CreateObjectMapping: 0.014481 ms MarkObjects: 0.185280 ms  DeleteObjects: 0.105631 ms)
-
-UnloadTime: 0.549452 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 241.
-Total: 0.809696 ms (FindLiveObjects: 0.017463 ms CreateObjectMapping: 0.016185 ms MarkObjects: 0.175058 ms  DeleteObjects: 0.004685 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.700409 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 180.
-Total: 0.924698 ms (FindLiveObjects: 0.015333 ms CreateObjectMapping: 0.014907 ms MarkObjects: 0.200188 ms  DeleteObjects: 0.116705 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.497239 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 171.
-Total: 0.808419 ms (FindLiveObjects: 0.014481 ms CreateObjectMapping: 0.016185 ms MarkObjects: 0.185280 ms  DeleteObjects: 0.011500 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.414183 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 168.
-Total: 0.791807 ms (FindLiveObjects: 0.011074 ms CreateObjectMapping: 0.015333 ms MarkObjects: 0.189113 ms  DeleteObjects: 0.003833 ms)
-
-UnloadTime: 0.532415 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 244.
-Total: 0.796918 ms (FindLiveObjects: 0.016611 ms CreateObjectMapping: 0.016185 ms MarkObjects: 0.175909 ms  DeleteObjects: 0.004259 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.722983 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 171.
-Total: 0.913198 ms (FindLiveObjects: 0.009796 ms CreateObjectMapping: 0.015759 ms MarkObjects: 0.197206 ms  DeleteObjects: 0.110742 ms)
-
-UnloadTime: 0.689158 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 247.
-Total: 0.829715 ms (FindLiveObjects: 0.020444 ms CreateObjectMapping: 0.024704 ms MarkObjects: 0.191243 ms  DeleteObjects: 0.005111 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.724261 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 186.
-Total: 0.933217 ms (FindLiveObjects: 0.012777 ms CreateObjectMapping: 0.016611 ms MarkObjects: 0.210836 ms  DeleteObjects: 0.115001 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.527055 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 177.
-Total: 0.825882 ms (FindLiveObjects: 0.016185 ms CreateObjectMapping: 0.019592 ms MarkObjects: 0.188687 ms  DeleteObjects: 0.011926 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.436757 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 174.
-Total: 0.830993 ms (FindLiveObjects: 0.010648 ms CreateObjectMapping: 0.017037 ms MarkObjects: 0.222762 ms  DeleteObjects: 0.003833 ms)
-
-UnloadTime: 0.689584 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 250.
-Total: 0.805011 ms (FindLiveObjects: 0.016611 ms CreateObjectMapping: 0.016185 ms MarkObjects: 0.181447 ms  DeleteObjects: 0.004259 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.707650 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 177.
-Total: 1.002218 ms (FindLiveObjects: 0.009370 ms CreateObjectMapping: 0.016185 ms MarkObjects: 0.201891 ms  DeleteObjects: 0.107760 ms)
-
-UnloadTime: 0.576286 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 253.
-Total: 0.853567 ms (FindLiveObjects: 0.019166 ms CreateObjectMapping: 0.017463 ms MarkObjects: 0.226169 ms  DeleteObjects: 0.005537 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.761317 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 180.
-Total: 0.986458 ms (FindLiveObjects: 0.009796 ms CreateObjectMapping: 0.020444 ms MarkObjects: 0.212966 ms  DeleteObjects: 0.123094 ms)
-
-UnloadTime: 0.583101 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 256.
-Total: 0.833123 ms (FindLiveObjects: 0.024278 ms CreateObjectMapping: 0.017463 ms MarkObjects: 0.191669 ms  DeleteObjects: 0.005537 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.728095 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 195.
-Total: 0.951106 ms (FindLiveObjects: 0.016611 ms CreateObjectMapping: 0.019592 ms MarkObjects: 0.216373 ms  DeleteObjects: 0.118409 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.645038 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 186.
-Total: 0.808419 ms (FindLiveObjects: 0.010648 ms CreateObjectMapping: 0.017037 ms MarkObjects: 0.188687 ms  DeleteObjects: 0.011074 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.658242 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 183.
-Total: 0.797344 ms (FindLiveObjects: 0.009796 ms CreateObjectMapping: 0.017037 ms MarkObjects: 0.198484 ms  DeleteObjects: 0.003833 ms)
-
-UnloadTime: 0.629101 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 259.
-Total: 0.864642 ms (FindLiveObjects: 0.028537 ms CreateObjectMapping: 0.033222 ms MarkObjects: 0.194650 ms  DeleteObjects: 0.005537 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.711909 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 198.
-Total: 0.937902 ms (FindLiveObjects: 0.014055 ms CreateObjectMapping: 0.017889 ms MarkObjects: 0.217651 ms  DeleteObjects: 0.112446 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.515980 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 189.
-Total: 0.834401 ms (FindLiveObjects: 0.014055 ms CreateObjectMapping: 0.017463 ms MarkObjects: 0.194225 ms  DeleteObjects: 0.016611 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.419720 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 186.
-Total: 0.828863 ms (FindLiveObjects: 0.011074 ms CreateObjectMapping: 0.024278 ms MarkObjects: 0.208280 ms  DeleteObjects: 0.004685 ms)
-
-UnloadTime: 0.700232 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 262.
-Total: 0.832697 ms (FindLiveObjects: 0.025981 ms CreateObjectMapping: 0.023426 ms MarkObjects: 0.191669 ms  DeleteObjects: 0.005111 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.706798 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 189.
-Total: 0.928106 ms (FindLiveObjects: 0.010222 ms CreateObjectMapping: 0.018315 ms MarkObjects: 0.208280 ms  DeleteObjects: 0.115853 ms)
-
-UnloadTime: 0.574582 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 265.
-Total: 0.832271 ms (FindLiveObjects: 0.023426 ms CreateObjectMapping: 0.018741 ms MarkObjects: 0.194650 ms  DeleteObjects: 0.004685 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.687205 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 204.
-Total: 0.974106 ms (FindLiveObjects: 0.013203 ms CreateObjectMapping: 0.018741 ms MarkObjects: 0.224892 ms  DeleteObjects: 0.114575 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.482332 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 195.
-Total: 0.830567 ms (FindLiveObjects: 0.014481 ms CreateObjectMapping: 0.018741 ms MarkObjects: 0.201465 ms  DeleteObjects: 0.011926 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.407368 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 192.
-Total: 0.834826 ms (FindLiveObjects: 0.011074 ms CreateObjectMapping: 0.027685 ms MarkObjects: 0.214243 ms  DeleteObjects: 0.003833 ms)
-
-UnloadTime: 0.717695 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 268.
-Total: 0.834826 ms (FindLiveObjects: 0.025129 ms CreateObjectMapping: 0.020018 ms MarkObjects: 0.198058 ms  DeleteObjects: 0.005111 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.647593 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 207.
-Total: 0.959199 ms (FindLiveObjects: 0.014055 ms CreateObjectMapping: 0.023000 ms MarkObjects: 0.225744 ms  DeleteObjects: 0.115853 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.575185 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 198.
-Total: 0.929383 ms (FindLiveObjects: 0.013629 ms CreateObjectMapping: 0.019592 ms MarkObjects: 0.205299 ms  DeleteObjects: 0.011926 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.562833 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 195.
-Total: 0.816511 ms (FindLiveObjects: 0.010222 ms CreateObjectMapping: 0.019166 ms MarkObjects: 0.208706 ms  DeleteObjects: 0.003833 ms)
-
-UnloadTime: 0.648694 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 271.
-Total: 0.841215 ms (FindLiveObjects: 0.025555 ms CreateObjectMapping: 0.027259 ms MarkObjects: 0.196780 ms  DeleteObjects: 0.005537 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.646316 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 198.
-Total: 0.920013 ms (FindLiveObjects: 0.010222 ms CreateObjectMapping: 0.018741 ms MarkObjects: 0.211262 ms  DeleteObjects: 0.106483 ms)
-
-UnloadTime: 0.547322 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 274.
-Total: 0.845049 ms (FindLiveObjects: 0.025555 ms CreateObjectMapping: 0.021296 ms MarkObjects: 0.202743 ms  DeleteObjects: 0.004685 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.694872 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 201.
-Total: 0.928106 ms (FindLiveObjects: 0.010648 ms CreateObjectMapping: 0.020018 ms MarkObjects: 0.212540 ms  DeleteObjects: 0.106908 ms)
-
-UnloadTime: 0.704065 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 277.
-Total: 0.877420 ms (FindLiveObjects: 0.028537 ms CreateObjectMapping: 0.030241 ms MarkObjects: 0.219780 ms  DeleteObjects: 0.005537 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.711909 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 216.
-Total: 0.979217 ms (FindLiveObjects: 0.020444 ms CreateObjectMapping: 0.021296 ms MarkObjects: 0.236818 ms  DeleteObjects: 0.121816 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.511721 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 207.
-Total: 0.848030 ms (FindLiveObjects: 0.015759 ms CreateObjectMapping: 0.020018 ms MarkObjects: 0.216373 ms  DeleteObjects: 0.013203 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.853319 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
-Total: 0.865494 ms (FindLiveObjects: 0.011074 ms CreateObjectMapping: 0.029389 ms MarkObjects: 0.230429 ms  DeleteObjects: 0.004259 ms)
-
-UnloadTime: 0.730047 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 280.
-Total: 0.874012 ms (FindLiveObjects: 0.021296 ms CreateObjectMapping: 0.021296 ms MarkObjects: 0.200188 ms  DeleteObjects: 0.005111 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.766854 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 207.
-Total: 0.947698 ms (FindLiveObjects: 0.010648 ms CreateObjectMapping: 0.020870 ms MarkObjects: 0.224892 ms  DeleteObjects: 0.117131 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 159.
+Total: 0.751347 ms (FindLiveObjects: 0.008092 ms CreateObjectMapping: 0.014055 ms MarkObjects: 0.181873 ms  DeleteObjects: 0.003407 ms)
 
