@@ -38,7 +38,7 @@ public class LocalScoreboard : MonoBehaviour {
 	}
 
 	void Awake () {
-		filePath = Path.Combine(Application.persistentDataPath, "hyperpaddle-scores.txt");
+		filePath = Path.Combine(Application.persistentDataPath, "hyperpaddle-scores.bin");
 		ReadData();
 	}
 
@@ -50,7 +50,13 @@ public class LocalScoreboard : MonoBehaviour {
 			scoreData = binaryFormatter.Deserialize(file) as ScoreboardData;
 			file.Close();
 		} catch(IOException e) {
+			Debug.Log("Error reading scores file.");
 			Debug.LogException(e);
+			scoreData = new ScoreboardData();
+		} catch(SerializationException e) {
+			Debug.Log("Error deserializing scores file.");
+			Debug.LogException(e);
+			scoreData = new ScoreboardData();
 		}
 	}
 
@@ -58,10 +64,15 @@ public class LocalScoreboard : MonoBehaviour {
 		IFormatter binaryFormatter = new BinaryFormatter();
 
 		try {
+			Debug.Log("Writing to file " + filePath);
 			Stream file = new FileStream(filePath, FileMode.Create, FileAccess.Write);
 			binaryFormatter.Serialize(file, scoreData);
 			file.Close();
 		} catch(IOException e) {
+			Debug.Log("Error writing scores file.");
+			Debug.LogException(e);
+		} catch(SerializationException e) {
+			Debug.Log("Error serializing scores file.");
 			Debug.LogException(e);
 		}
 	}
