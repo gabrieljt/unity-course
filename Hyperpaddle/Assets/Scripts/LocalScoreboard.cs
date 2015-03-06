@@ -23,13 +23,19 @@ public class LocalScoreboard : MonoBehaviour {
 	}
 	
 	public int GetHighestTopScore () {
-		return scoreData.topScores.Last().Key;
+		int highestTopScore = scoreData.topScores.Any() ? scoreData.topScores.Last().Key : 0;
+		return highestTopScore;
 	}
 	
 	public bool IsTopScore (int score) {
-		var topFive = scoreData.topScores.Reverse().Take(5);
+		if (scoreData.topScores.ContainsKey(score) || score == 0)
+			return false;
 
-		if (topFive.Any()) return (score > topFive.Last().Key);	
+		var topFive = scoreData.topScores.Reverse().Take(5);
+		if (topFive.Count() < 5)
+			return true;
+		else if (topFive.Any())
+			return (score > topFive.Last().Key);	
 		return true;
 	}
 	
