@@ -22,8 +22,8 @@ public class LocalScoreboard : MonoBehaviour {
 		scoreData.currentTopScore = score;
 	}
 	
-	public int GetCurrentScore () {
-		return scoreData.currentTopScore;
+	public int GetHighestTopScore () {
+		return scoreData.topScores.Last().Key;
 	}
 	
 	public bool IsTopScore (int score) {

@@ -13,7 +13,7 @@ public class ScoreKeeper : MonoBehaviour {
 	void Start () {
 		DontDestroyOnLoad(gameObject);
 		currentScoreText.text = score.ToString();
-		topScoreText.text = scoreboard.GetCurrentScore().ToString();
+		topScoreText.text = scoreboard.GetHighestTopScore().ToString();
 	}
 
 	public void Add (int points) {
