@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -26,7 +27,10 @@ public class LocalScoreboard : MonoBehaviour {
 	}
 	
 	public bool IsTopScore (int score) {
-		return (score > scoreData.currentTopScore) ? true : false;
+		var topFive = scoreData.topScores.Reverse().Take(5);
+
+		if (topFive.Any()) return (score > topFive.Last().Key);	
+		return true;
 	}
 	
 	public void ClaimCurrentScore (string name) {

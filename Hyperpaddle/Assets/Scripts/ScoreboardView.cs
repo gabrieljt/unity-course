@@ -18,8 +18,7 @@ public class ScoreboardView : MonoBehaviour {
 				playerScores += string.Format("{0} <{1}>\n", playerScore.Value, playerScore.Key);
 			}
 			scoresText.text = playerScores;
-		} else {
+		} else
 			scoresText.text = "Well... why don't you be the first?";
-		}
 	}
 }

@@ -29,8 +29,7 @@ public class ScoreKeeper : MonoBehaviour {
 		if (scoreboard.IsTopScore(score)) {
 			scoreboard.SetCurrentScore(score);
 			levelManager.LoadLevel("Enter Name");
-		} else {
+		} else
 			levelManager.LoadLevel("Lose Menu");
-		}
 	}
 }
