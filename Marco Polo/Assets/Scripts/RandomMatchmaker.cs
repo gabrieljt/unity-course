@@ -20,4 +20,8 @@ public class RandomMatchmaker : MonoBehaviour {
 		Debug.Log("Could not connect to random room.");
 		PhotonNetwork.CreateRoom(null);
 	}
+
+	void OnJoinedRoom() {
+		GameObject monster = PhotonNetwork.Instantiate("monsterprefab", Vector3.zero, Quaternion.identity, 0);
+	}
 }
