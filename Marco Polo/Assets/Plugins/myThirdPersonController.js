@@ -27,7 +27,7 @@ enum CharacterState
 	Jumping = 4,
 }
 
-private var _characterState : CharacterState;
+public var _characterState : CharacterState;
 public var buik : Transform;
 // The speed when walking
 var walkSpeed = 2.0;
@@ -92,7 +92,7 @@ private var inAirVelocity = Vector3.zero;
 private var lastGroundedTime = 0.0;
 
 
-private var isControllable = true;
+public var isControllable = false;
 
 function Awake ()
 {
@@ -142,8 +142,10 @@ function UpdateSmoothedMovementDirection ()
 	// Always orthogonal to the forward vector
 	var right = Vector3(forward.z, 0, -forward.x);
 
-	var v = Input.GetAxisRaw("Vertical");
-	var h = Input.GetAxisRaw("Horizontal");
+	if (isControllable) {
+		var v = Input.GetAxisRaw("Vertical");
+		var h = Input.GetAxisRaw("Horizontal");
+	}
 
 	// Are we moving backwards or looking backwards
 	if (v < -0.2)
@@ -292,13 +294,7 @@ function DidJump ()
 
 function Update() {
 	
-	if (!isControllable)
-	{
-		// kill all inputs if not controllable.
-		Input.ResetInputAxes();
-	}
-
-	if (Input.GetButtonDown ("Jump"))
+	if (isControllable && Input.GetButtonDown ("Jump"))
 	{
 		lastJumpButtonTime = Time.time;
 	}
@@ -337,27 +333,34 @@ function Update() {
 		} 
 		else 
 		{
-			if(controller.velocity.sqrMagnitude < 0.5) {
+			if(isControllable && controller.velocity.sqrMagnitude < 0.5) {
 				_animation.CrossFade(idleAnimation.name);
+				_characterState = CharacterState.Idle;
 			}
 			else 
 			{
-				if(_characterState == CharacterState.Running) {
-					_animation[runAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, runMaxAnimationSpeed);
+				if(_characterState == CharacterState.Idle) {
+					_animation.CrossFade(idleAnimation.name);
+				}
+				else if(_characterState == CharacterState.Running) {
+					_animation[runAnimation.name].speed = runMaxAnimationSpeed;
+					if (isControllable) _animation[runAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, runMaxAnimationSpeed);
 					_animation.CrossFade(runAnimation.name);	
 				}
 				else if(_characterState == CharacterState.Trotting) {
-					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, trotMaxAnimationSpeed);
+					_animation[walkAnimation.name].speed = trotMaxAnimationSpeed;
+					if (isControllable) _animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, trotMaxAnimationSpeed);
 					_animation.CrossFade(walkAnimation.name);	
 				}
 				else if(_characterState == CharacterState.Walking) {
-					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed);
+					_animation[walkAnimation.name].speed = walkMaxAnimationSpeed;
+					if (isControllable) _animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed);
 					_animation.CrossFade(walkAnimation.name);	
 				}
 				
 			}
 		}
-		if (Input.GetButton("Fire1"))
+		if (isControllable && Input.GetButton("Fire1"))
 		{
 			animation[attackPoseAnimation.name].AddMixingTransform(buik);
 			animation.CrossFade(attackPoseAnimation.name, 0.2);

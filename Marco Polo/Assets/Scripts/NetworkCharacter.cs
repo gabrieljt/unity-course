@@ -14,12 +14,16 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 	}
 
 	void OnPhotonSerializeView (PhotonStream stream, PhotonMessageInfo info) {
+		myThirdPersonController controller = GetComponent<myThirdPersonController>();
+		
 		if (stream.isWriting) {
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
+			stream.SendNext((int) controller._characterState);
 		} else {
 			correctPlayerPosition = (Vector3) stream.ReceiveNext();
 			corretPlayerRotation = (Quaternion) stream.ReceiveNext();
+			controller._characterState = (CharacterState) stream.ReceiveNext();
 		}
 	}
 }
