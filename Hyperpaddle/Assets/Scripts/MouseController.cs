@@ -4,11 +4,27 @@ using System.Collections;
 public class MouseController : MonoBehaviour {
 
 	public Transform paddle;
-	public Camera camera;
 	private float cameraToPaddleDistance;
+	new public Camera camera;
 	private CameraControl cameraControl;
-	
+
+	void Awake() {
+		Setup();		
+	}
+
 	void Start () {
+		if (camera == null)
+		{
+			Debug.LogError ("No camera assigned. Please correct and restart.");
+			enabled = false;
+			return;
+		}
+	}
+
+	public void Setup () {
+		if (camera == null && Camera.main != null)
+			camera = Camera.main;
+
 		cameraToPaddleDistance = paddle.transform.position.z - camera.transform.position.z;
 		cameraControl = camera.GetComponent<CameraControl>() as CameraControl;
 	}
