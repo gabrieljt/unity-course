@@ -10,6 +10,12 @@ public class GameLogic : Photon.MonoBehaviour {
 		scenePhotonView = GetComponent<PhotonView>();
 	}
 
+	void OnJoinedRoom () {
+		if (PhotonNetwork.playerList.Length == 1)
+			playerWhoIsIt = PhotonNetwork.player.ID;
+		Debug.Log("playerWhoIsIt: " + playerWhoIsIt);
+	}
+
 	void OnPhotonPlayerConnected (PhotonPlayer player) {
 		Debug.Log("OnPhotonPlayerConnected: " + player);
 
@@ -17,10 +23,13 @@ public class GameLogic : Photon.MonoBehaviour {
 			TagPlayer(playerWhoIsIt);
 	}
 
-	void OnJoinedRoom () {
-		if (PhotonNetwork.playerList.Length == 1)
-			playerWhoIsIt = PhotonNetwork.player.ID;
-		Debug.Log("playerWhoIsIt: " + playerWhoIsIt);
+	void OnPhotonPlayerDisconnected (PhotonPlayer player) {
+		Debug.Log("OnPhotonPlayerDisconnected: " + player);
+
+		if (PhotonNetwork.isMasterClient) {
+			if (player.ID == playerWhoIsIt)
+				TagPlayer(PhotonNetwork.player.ID);
+		}
 	}
 
 	[RPC]
