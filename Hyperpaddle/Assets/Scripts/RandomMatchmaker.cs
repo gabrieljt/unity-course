@@ -3,6 +3,9 @@ using System.Collections;
 
 public class RandomMatchmaker : MonoBehaviour {
 
+	public Camera playerOneCamera;
+	private PhotonView playerOnePhotonView;
+
 	void Start () {
 		PhotonNetwork.logLevel = PhotonLogLevel.Full;
 		PhotonNetwork.ConnectUsingSettings("0.1");
@@ -22,6 +25,8 @@ public class RandomMatchmaker : MonoBehaviour {
 	}
 
 	void OnJoinedRoom () {
-		GameObject playerOne = PhotonNetwork.Instantiate("Multiplayer Paddle", Vector3.zero, Quaternion.identity, 0);
+		GameObject playerOne = PhotonNetwork.Instantiate("Multiplayer Paddle", new Vector3(0f, 0f, -80), Quaternion.identity, 0);
+		playerOne.GetComponent<MouseController>().camera = playerOneCamera;
+		playerOnePhotonView = playerOne.GetComponent<PhotonView>();
 	}
 }
