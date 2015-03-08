@@ -14,10 +14,12 @@ public class RandomMatchmaker : MonoBehaviour {
 		GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
 
 		if (PhotonNetwork.connectionStateDetailed == PeerState.Joined) {
-			if (GUILayout.Button("Marco!")) {
+			bool shoutMarco = GameLogic.playerWhoIsIt == PhotonNetwork.player.ID;
+
+			if (shoutMarco && GUILayout.Button("Marco!")) {
 				photonView.RPC("Marco", PhotonTargets.All);
 			}
-			if (GUILayout.Button("Polo!")) {
+			if (!shoutMarco && GUILayout.Button("Polo!")) {
 				photonView.RPC("Polo", PhotonTargets.All);
 			}
 		}
