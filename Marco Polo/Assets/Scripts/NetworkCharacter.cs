@@ -8,8 +8,8 @@ public class NetworkCharacter : MonoBehaviour {
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
 		} else {
-			transform.position = stream.ReceiveNext() as Vector3;
-			transform.rotation = stream.ReceiveNext() as Quaternion;
+			transform.position = (Vector3) stream.ReceiveNext();
+			transform.rotation = (Quaternion) stream.ReceiveNext();
 		}
 	}
 }
