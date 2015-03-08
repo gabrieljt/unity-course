@@ -23,16 +23,16 @@ public class RandomMatchmaker : MonoBehaviour {
 		}
 	}
 
-	void OnJoinedLobby() {
+	void OnJoinedLobby () {
 		PhotonNetwork.JoinRandomRoom();
 	}
 
-	void OnPhotonRandomJoinFailed() {
+	void OnPhotonRandomJoinFailed () {
 		Debug.Log("Could not connect to random room.");
 		PhotonNetwork.CreateRoom(null);
 	}
 
-	void OnJoinedRoom() {
+	void OnJoinedRoom () {
 		GameObject monster = PhotonNetwork.Instantiate("monsterprefab", Vector3.zero, Quaternion.identity, 0);
 		monster.GetComponent<myThirdPersonController>().isControllable = true;
 		photonView = monster.GetComponent<PhotonView>();
