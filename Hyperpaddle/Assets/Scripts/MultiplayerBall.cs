@@ -7,13 +7,16 @@ public class MultiplayerBall : Photon.MonoBehaviour {
 	[Range (1f, 1.1f)]
 	public float speedMultiplier = 1.03f;
 	
-	public Vector3 startVelocity = new Vector3(2.5f, 2.5f, -10f);
+	public Vector3 startVelocity = new Vector3(0f, 0f, -10f);
 	public Vector3 funnyBounce = new Vector3(0f, 0f, 0f);
 	private Vector3 correctObjectPosition;
 	private Quaternion corretObjectRotation;
+	private Vector3 correctObjectVelocity;
+	private Vector3 correctObjectFunnyBounce;
 	
 	void Start () {
 		rigidbody.velocity = startVelocity;
+		Accelerate();
 	}
 
 	void Update () {
@@ -23,25 +26,31 @@ public class MultiplayerBall : Photon.MonoBehaviour {
 		if (!photonView.isMine) {
 			transform.position = correctObjectPosition;
 			transform.rotation = corretObjectRotation;
+			rigidbody.velocity = correctObjectVelocity;
+			funnyBounce = correctObjectFunnyBounce;
 		}
 	}
 	
 	void OnCollisionEnter () {
-		audio.Play();
-		Accelerate();
+		if (PhotonNetwork.isMasterClient)
+			GetComponent<PhotonView>().RPC("CollisionRPC", PhotonTargets.All);
 	}
 
 	void OnPhotonSerializeView (PhotonStream stream, PhotonMessageInfo info) {
 		if (stream.isWriting) {
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
+			stream.SendNext(rigidbody.velocity);
+			stream.SendNext(funnyBounce);
 		} else {
 			correctObjectPosition = (Vector3) stream.ReceiveNext();
 			corretObjectRotation = (Quaternion) stream.ReceiveNext();
+			correctObjectVelocity = (Vector3) stream.ReceiveNext();
+			correctObjectFunnyBounce = (Vector3) stream.ReceiveNext();
 		}
 	}
 
-	void Accelerate () {
+	public void Accelerate () {
 		Vector3 velocity = rigidbody.velocity;
 		velocity.z *= speedMultiplier;
 		
@@ -50,8 +59,16 @@ public class MultiplayerBall : Photon.MonoBehaviour {
 		rigidbody.velocity = velocity + funnyBounce;
 	}
 
-	public void Reset() {
+	public void Reset () {
 		rigidbody.velocity = Vector3.zero;
 		transform.position = new Vector3(0f, 0f, -50f);
+		transform.rotation = Quaternion.identity;
+		funnyBounce = Vector3.zero;
+	}
+
+	[RPC]
+	void CollisionRPC () {
+		audio.Play();
+		Accelerate();
 	}
 }
