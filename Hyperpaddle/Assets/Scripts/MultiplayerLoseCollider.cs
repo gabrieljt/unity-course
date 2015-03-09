@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LoseCollider : MonoBehaviour {
+public class MultiplayerLoseCollider : MonoBehaviour {
 
 	public ScoreKeeper scoreKeeper;
-
+	
 	void OnTriggerEnter () {
 		audio.Play();
-		Invoke("NotifyScoreKeeper", 2);
+		NotifyScoreKeeper();
 	}
-
+	
 	void NotifyScoreKeeper () {
-		scoreKeeper.BallOut();		
+		MultiplayerGame.NewRound();
+		//scoreKeeper.BallOut();		
 	}
 }
