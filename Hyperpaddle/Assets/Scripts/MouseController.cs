@@ -9,7 +9,7 @@ public class MouseController : MonoBehaviour {
 	private CameraControl cameraControl;
 
 	void Awake() {
-		Setup();		
+		Setup(true);		
 	}
 
 	void Start () {
@@ -21,11 +21,12 @@ public class MouseController : MonoBehaviour {
 		}
 	}
 
-	public void Setup () {
+	public void Setup (bool playerOne) {
 		if (camera == null && Camera.main != null)
 			camera = Camera.main;
 
 		cameraToPaddleDistance = paddle.transform.position.z - camera.transform.position.z;
+		if (!playerOne) cameraToPaddleDistance *= -1;
 		cameraControl = camera.GetComponent<CameraControl>() as CameraControl;
 	}
 	
