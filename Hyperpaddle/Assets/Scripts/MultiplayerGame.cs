@@ -34,6 +34,7 @@ public class MultiplayerGame : Photon.MonoBehaviour {
 	void ResetBallPosition () {			
 		ball.Reset();
 		ball.rigidbody.velocity = ball.startVelocity;
+		ball.Accelerate();
 	}
 	
 	public static void NewRound () {
