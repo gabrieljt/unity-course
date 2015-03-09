@@ -7,7 +7,7 @@ public class MultiplayerLoseCollider : MonoBehaviour {
 	
 	void OnTriggerEnter () {
 		audio.Play();
-		NotifyScoreKeeper();
+		Invoke("NotifyScoreKeeper", 2);
 	}
 	
 	void NotifyScoreKeeper () {
