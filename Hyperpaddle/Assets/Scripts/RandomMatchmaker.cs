@@ -33,8 +33,7 @@ public class RandomMatchmaker : MonoBehaviour {
 		
 		if (PhotonNetwork.playerList.Length == 1) {
 			paddle.transform.position = new Vector3(0f, 0f, -80f);
-			paddle.GetComponent<MouseController>().Setup(true);
-			
+			paddle.GetComponent<MouseController>().Setup(true);			
 		} else {
 			paddle.transform.position = new Vector3(0f, 0f, -20f);
 			paddle.transform.rotation = new Quaternion(0f, 180f, 0f, 0f);
@@ -42,6 +41,7 @@ public class RandomMatchmaker : MonoBehaviour {
 			paddleCamera.transform.rotation = new Quaternion(0f, 180f, 0f, 0f);
 			paddle.GetComponent<MouseController>().Setup(false);
 		}
+		paddle.GetComponent<MouseController>().isControllable = true;
 
 		matchPhotonView = paddle.GetComponent<PhotonView>();		
 	}

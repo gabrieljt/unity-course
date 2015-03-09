@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MouseController : MonoBehaviour {
 
+	public bool isControllable = false;
 	public Transform paddle;
 	private float cameraToPaddleDistance;
 	new public Camera camera;
@@ -31,9 +32,11 @@ public class MouseController : MonoBehaviour {
 	}
 	
 	void OnMouseDrag () {
-		Vector3 mousePosition = GetMouseCoordinatesAtDistance();
-		MovePaddleTo(mousePosition);
-		cameraControl.ShiftAroundPaddle(mousePosition);		
+		if (isControllable) {
+			Vector3 mousePosition = GetMouseCoordinatesAtDistance();
+			MovePaddleTo(mousePosition);
+			cameraControl.ShiftAroundPaddle(mousePosition);
+		}
 	}
 	
 	Vector3 GetMouseCoordinatesAtDistance () {
