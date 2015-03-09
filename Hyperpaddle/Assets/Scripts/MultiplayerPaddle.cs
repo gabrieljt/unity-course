@@ -4,7 +4,7 @@ using System.Collections;
 public class MultiplayerPaddle : Photon.MonoBehaviour {
 
 	[Range (1f, 10f)]
-	public float lerpMultiplier = 1f;
+	public float lerpMultiplier = 5f;
 
 	private Vector3 correctObjectPosition;
 	private Quaternion correctObjectRotation;
