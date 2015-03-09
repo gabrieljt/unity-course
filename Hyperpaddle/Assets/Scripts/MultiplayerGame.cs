@@ -21,16 +21,10 @@ public class MultiplayerGame : Photon.MonoBehaviour {
 
 	}
 
-	[RPC]
-	void ResetBallPosition () {
-		ball.rigidbody.velocity = Vector3.zero;
-		ball.transform.position = new Vector3(0f, 0f, -22f);
-		ball.rigidbody.velocity = ball.GetComponent<Ball>().startVelocity;
-		
-	}
+
 
 	public static void NewRound () {
 		if (PhotonNetwork.isMasterClient)
-			scenePhotonView.RPC("ResetBallPosition", PhotonTargets.All);
+			ball.GetComponent<PhotonView>().RPC("ResetBallPosition", PhotonTargets.All);
 	}
 }

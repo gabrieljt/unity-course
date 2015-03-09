@@ -7,12 +7,12 @@ public class MultiplayerPaddle : Photon.MonoBehaviour {
 	public float lerpMultiplier = 1f;
 
 	private Vector3 correctObjectPosition;
-	private Quaternion corretObjectRotation;
+	private Quaternion correctObjectRotation;
 	
 	void Update () {
 		if (!photonView.isMine) {
 			transform.position = Vector3.Lerp(transform.position, correctObjectPosition, Time.deltaTime * lerpMultiplier);
-			transform.rotation = Quaternion.Lerp(transform.rotation, corretObjectRotation, Time.deltaTime * lerpMultiplier);
+			transform.rotation = Quaternion.Lerp(transform.rotation, correctObjectRotation, Time.deltaTime * lerpMultiplier);
 		}
 	}
 	
@@ -22,7 +22,7 @@ public class MultiplayerPaddle : Photon.MonoBehaviour {
 			stream.SendNext(transform.rotation);
 		} else {
 			correctObjectPosition = (Vector3) stream.ReceiveNext();
-			corretObjectRotation = (Quaternion) stream.ReceiveNext();
+			correctObjectRotation = (Quaternion) stream.ReceiveNext();
 		}
 	}
 }
