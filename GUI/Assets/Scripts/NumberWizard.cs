@@ -34,7 +34,6 @@ public class NumberWizard : MonoBehaviour {
 
 	void NextGuess()
 	{
-		// guess = (max + min) / 2;
 		guess = Random.Range(min, max);
 		guessText.text = guess.ToString();		
 	}
