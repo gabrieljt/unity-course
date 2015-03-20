@@ -10,11 +10,22 @@ public class NumberWizard : MonoBehaviour {
 	public Text guessText;
 	public LevelManager levelManager;
 	
-	void Start() {
+	void Start() 
+	{
 		max = 1001;
 		min = 1;
 		guess = 500;
 		SetGuessText();
+	}
+
+	void Update() 
+	{
+		if (Input.GetKeyDown(KeyCode.UpArrow))
+			GreaterThan();
+		else if (Input.GetKeyDown(KeyCode.DownArrow))
+			LesserThan();
+		else if (Input.GetKeyDown(KeyCode.Space))
+			EqualTo();
 	}
 
 	public void GreaterThan()
