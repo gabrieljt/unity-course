@@ -4,28 +4,15 @@ using System.Collections;
 
 public class NumberWizard : MonoBehaviour {
 
-	public int max;
-	public int min;
-	public int guess;
+	int max = 1001;
+	int min = 1;
+	int guess;
 	public Text guessText;
 	public LevelManager levelManager;
 	
 	void Start() 
 	{
-		max = 1001;
-		min = 1;
-		guess = 500;
-		SetGuessText();
-	}
-
-	void Update() 
-	{
-		if (Input.GetKeyDown(KeyCode.UpArrow))
-			GreaterThan();
-		else if (Input.GetKeyDown(KeyCode.DownArrow))
-			LesserThan();
-		else if (Input.GetKeyDown(KeyCode.Space))
-			EqualTo();
+		NextGuess();
 	}
 
 	public void GreaterThan()
@@ -47,12 +34,8 @@ public class NumberWizard : MonoBehaviour {
 
 	void NextGuess()
 	{
-		guess = (max + min) / 2;
-		SetGuessText();
-	}
-
-	void SetGuessText()
-	{
+		// guess = (max + min) / 2;
+		guess = Random.Range(min, max);
 		guessText.text = guess.ToString();		
 	}
 }
