@@ -4,23 +4,20 @@ using System;
 
 public class Brick : MonoBehaviour {
 
-    public int maxHits;
-    public int timesHit = 0;
+    private int maxHits;
+    private int timesHit = 0;
 
 	void Start()
     {
         maxHits = Convert.ToInt32(name.Split(' ')[0]);
 	}
 	
-	void Update() 
-    {
-        if (timesHit == maxHits)
-            Destroy(gameObject);
-	}
-
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D()
     {
         timesHit++;
+        
+        if (timesHit == maxHits)
+            Destroy(gameObject);
     }
 
 }
