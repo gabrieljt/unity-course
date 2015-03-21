@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ball : MonoBehaviour {
 
-    void OnCollisionEnter()
+    void OnCollisionEnter2D()
     {
         Debug.Log("Ball collided.");
     }
