@@ -14,4 +14,5 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log("Quit Game requested.");
 		Application.Quit();
 	}
+
 }

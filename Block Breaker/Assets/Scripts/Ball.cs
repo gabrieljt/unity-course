@@ -7,7 +7,7 @@
 
     void Start()
     {
-        startVelocity = new Vector2(Random.Range(-20f, 20f), Random.Range(10f, 20f));
+        startVelocity = new Vector2(Random.Range(-5f, 5f), Random.Range(5f, 10f));
         paddleToBallDistance = transform.position - paddle.transform.position;
     }
 
