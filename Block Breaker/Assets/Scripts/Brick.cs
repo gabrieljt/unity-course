@@ -6,6 +6,7 @@ public class Brick : MonoBehaviour {
 
     public AudioClip breakSound;
     public Sprite[] hitSprites;
+    public GameObject onDestroyParticle;
     
     public static int breakableCount = 0;
     
@@ -40,7 +41,7 @@ public class Brick : MonoBehaviour {
 
         if (timesHit == maxHits)
         {
-            AudioSource.PlayClipAtPoint(breakSound, transform.position);
+            HandleOnDestroyEffects();
             breakableCount--;
             Destroy(gameObject);
             levelManager.BrickDestroyed();
@@ -49,6 +50,13 @@ public class Brick : MonoBehaviour {
         {
             LoadSprites();
         }        
+    }
+
+    void HandleOnDestroyEffects()
+    {
+        AudioSource.PlayClipAtPoint(breakSound, transform.position, 0.15f);
+        onDestroyParticle.GetComponent<ParticleSystem>().startColor = GetComponent<SpriteRenderer>().color;
+        Instantiate(onDestroyParticle, transform.position, Quaternion.identity);
     }
 
     public void LoadSprites()
