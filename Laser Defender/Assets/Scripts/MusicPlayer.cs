@@ -5,7 +5,7 @@ public class MusicPlayer : MonoBehaviour {
 
 	static MusicPlayer instance = null;
 	
-	void Start () 
+	void Start() 
 	{
 		if (instance != null && instance != this) 
 		{
