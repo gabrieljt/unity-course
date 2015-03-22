@@ -3,9 +3,16 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-	public float velocity = 0.15f;
+	public float velocity = 5f;
 
-	void Update () 
+	private float leftBounds, rightBounds;
+
+	void Start()
+	{
+		SetWorldBounds();
+	}
+
+	void Update() 
 	{
 		HandleInput();
 	}
@@ -16,14 +23,24 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
-			position.x -= velocity;
+			position.x -= velocity * Time.deltaTime;
 		}
 		else if (Input.GetKey(KeyCode.RightArrow))
 		{
-			position.x += velocity;
+			position.x += velocity * Time.deltaTime;
 		}
 
-		transform.position = new Vector3(Mathf.Clamp(position.x, -6.15f, 6.15f), position.y, position.z);
+		transform.position = new Vector3(Mathf.Clamp(position.x, leftBounds, rightBounds), position.y, position.z);
+	}
+
+	void SetWorldBounds()
+	{
+		Camera camera = Camera.main;
+		float shipToCameraDistance = transform.position.z - camera.transform.position.z;
+		float padding = GetComponent<SpriteRenderer>().sprite.bounds.size.x / 2;
+		
+		leftBounds = camera.ViewportToWorldPoint(new Vector3(0f, 0f, shipToCameraDistance)).x + padding;
+		rightBounds = camera.ViewportToWorldPoint(new Vector3(1f, 1f, shipToCameraDistance)).x - padding;
 	}
 
 }
