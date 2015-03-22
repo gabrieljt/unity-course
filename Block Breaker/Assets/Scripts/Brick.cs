@@ -4,22 +4,24 @@ using System;
 
 public class Brick : MonoBehaviour {
 
+    public AudioClip breakSound;
     public Sprite[] hitSprites;
-
+    
+    public static int breakableCount = 0;
+    
     private LevelManager levelManager;
-    private static int bricksCount;
+    private bool isBreakable;
     private int maxHits = 0;
     private int timesHit = 0;
-    bool isBreakable;
 
 	void Start()    
     {
         levelManager = GameObject.FindObjectOfType<LevelManager>();
-        isBreakable = tag.Equals("Breakable");
+        isBreakable = (tag == "Breakable");
 
         if (isBreakable)
         {
-            bricksCount = GameObject.FindGameObjectsWithTag("Breakable").Length;
+            breakableCount++;
             maxHits = hitSprites.Length + 1;
         }        
 	}
@@ -38,18 +40,15 @@ public class Brick : MonoBehaviour {
 
         if (timesHit == maxHits)
         {
+            AudioSource.PlayClipAtPoint(breakSound, transform.position);
+            breakableCount--;
             Destroy(gameObject);
-            bricksCount--;
+            levelManager.BrickDestroyed();
         }
         else
         {
             LoadSprites();
-        }
-
-        if (bricksCount == 0)
-        {
-            levelManager.LoadNextLevel();
-        }
+        }        
     }
 
     public void LoadSprites()
