@@ -1,10 +1,13 @@
 ﻿using UnityEngine;using System.Collections;public class Paddle : MonoBehaviour {
 
-    public bool debug;
+    public bool debug = false;
+
+    private Ball ball;
 
     void Start()
     {
         Cursor.visible = false;
+        ball = GameObject.FindObjectOfType<Ball>();
     }	void Update()     {
         if (!debug)
         {
@@ -25,8 +28,7 @@
 
     void FollowBall()
     {
-        Vector3 ballPosition = GameObject.FindObjectOfType<Ball>().transform.position;
-        transform.position = new Vector3(Mathf.Clamp(ballPosition.x, 0.5f, 15.5f), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(ball.transform.position.x, 0.5f, 15.5f), transform.position.y, transform.position.z);
     }
 
     void OnDestroy()
