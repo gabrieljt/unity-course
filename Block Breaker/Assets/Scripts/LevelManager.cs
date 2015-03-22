@@ -3,11 +3,25 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
-	public void LoadLevel(string name)
+    public int index;
+    
+    public void LoadLevel(string name)
 	{
 		Debug.Log("New Level load: " + name);
 		Application.LoadLevel(name);
 	}
+
+    public void LoadLevel(int index)
+    {
+        Debug.Log("New Level load: " + name);
+        Application.LoadLevel(index);
+    }
+
+    public void LoadNextLevel()
+    {
+        index++;
+        LoadLevel(index);
+    }
 
 	public void QuitRequest()
 	{

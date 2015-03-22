@@ -1,5 +1,6 @@
-﻿using UnityEngine;using System.Collections;public class Ball : MonoBehaviour {        public Paddle paddle;
-    
+﻿using UnityEngine;using System.Collections;public class Ball : MonoBehaviour {
+
+    private Paddle paddle;
     private bool launched = false;
     private Vector3 paddleToBallDistance;
     private Vector2 startVelocity;
@@ -7,6 +8,7 @@
 
     void Start()
     {
+        paddle = GameObject.FindObjectOfType<Paddle>();
         startVelocity = new Vector2(Random.Range(-5f, 5f), Random.Range(5f, 10f));
         paddleToBallDistance = transform.position - paddle.transform.position;
     }
@@ -25,4 +27,4 @@
             }
         }        
     }    void OnCollisionEnter2D()    {
-        GetComponent<Rigidbody2D>().velocity *= speedMultiplier;    }}
+        // GetComponent<Rigidbody2D>().velocity *= speedMultiplier;    }}
