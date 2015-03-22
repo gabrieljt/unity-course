@@ -4,6 +4,8 @@ using System;
 
 public class Brick : MonoBehaviour {
 
+    public Sprite[] hitSprites;
+
     private LevelManager levelManager;
     private static int bricksCount;
     private int maxHits;
@@ -13,7 +15,7 @@ public class Brick : MonoBehaviour {
     {
         levelManager = GameObject.FindObjectOfType<LevelManager>();
         bricksCount = GameObject.FindObjectsOfType<Brick>().Length;
-        maxHits = Convert.ToInt32(name.Split(' ')[0]);
+        maxHits = hitSprites.Length + 1;
 	}
 	
     void OnCollisionEnter2D()
@@ -25,11 +27,21 @@ public class Brick : MonoBehaviour {
             Destroy(gameObject);
             bricksCount--;
         }
+        else
+        {
+            LoadSprites();
+        }
 
         if (bricksCount == 0)
         {
             levelManager.LoadNextLevel();
         }
+    }
+
+    public void LoadSprites()
+    {
+        int spriteIndex = timesHit - 1;
+        GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 
 }

@@ -4,7 +4,7 @@
     private bool launched = false;
     private Vector3 paddleToBallDistance;
     private Vector2 startVelocity;
-    private float speedMultiplier = 1.03f;
+    private float speedMultiplier = 1.01f;
 
     void Start()
     {
@@ -27,4 +27,4 @@
             }
         }        
     }    void OnCollisionEnter2D()    {
-        // GetComponent<Rigidbody2D>().velocity *= speedMultiplier;    }}
+        GetComponent<Rigidbody2D>().velocity *= speedMultiplier;    }}
