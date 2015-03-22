@@ -11,8 +11,8 @@ public class Brick : MonoBehaviour {
 
 	void Start()    
     {
-        bricksCount = GameObject.FindObjectsOfType<Brick>().Length;
         levelManager = GameObject.FindObjectOfType<LevelManager>();
+        bricksCount = GameObject.FindObjectsOfType<Brick>().Length;
         maxHits = Convert.ToInt32(name.Split(' ')[0]);
 	}
 	

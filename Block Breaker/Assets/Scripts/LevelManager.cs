@@ -3,8 +3,6 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
-    public int index;
-    
     public void LoadLevel(string name)
 	{
 		Debug.Log("New Level load: " + name);
@@ -18,9 +16,8 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void LoadNextLevel()
-    {
-        index++;
-        LoadLevel(index);
+    {        
+        LoadLevel(Application.loadedLevel + 1);
     }
 
 	public void QuitRequest()
