@@ -6,17 +6,19 @@ public class LevelManager : MonoBehaviour {
     public void LoadLevel(string name)
 	{
 		Debug.Log("New Level load: " + name);
+        Brick.breakableCount = 0;
 		Application.LoadLevel(name);
 	}
 
     public void LoadLevel(int index)
     {
         Debug.Log("New Level load: " + name);
+        Brick.breakableCount = 0;
         Application.LoadLevel(index);
     }
 
     public void LoadNextLevel()
-    {        
+    {
         LoadLevel(Application.loadedLevel + 1);
     }
 
