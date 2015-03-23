@@ -34,7 +34,8 @@ public class EnemyFormation : MonoBehaviour {
 
 		position.x += direction * velocity * Time.deltaTime;
 				
-		transform.position = new Vector3(Mathf.Clamp(position.x, leftBoundary, rightBoundary), position.y, position.z);
+		transform.position = new Vector3(Mathf.Clamp(position.x, leftBoundary, rightBoundary), 
+		                                 position.y, position.z);
 	}
 
 	void SetBounds()
