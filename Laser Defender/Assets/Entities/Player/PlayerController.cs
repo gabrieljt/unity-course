@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		Camera camera = Camera.main;
 		float shipToCameraDistance = transform.position.z - camera.transform.position.z;
-		float padding = GetComponent<SpriteRenderer>().sprite.bounds.size.x / 2;
+		float padding = GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.5f;
 		
 		leftBounds = camera.ViewportToWorldPoint(new Vector3(0f, 0f, shipToCameraDistance)).x + padding;
 		rightBounds = camera.ViewportToWorldPoint(new Vector3(1f, 1f, shipToCameraDistance)).x - padding;
