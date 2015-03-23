@@ -11,12 +11,11 @@ public class Laser : MonoBehaviour {
 	void Start()
 	{
 		SetBounds();
+		GetComponent<Rigidbody2D>().velocity = new Vector2(0f, direction * velocity);		
 	}
 
 	void Update() 
 	{
-		transform.position += new Vector3(0f, direction * velocity * Time.deltaTime, 0f);
-
 		if (transform.position.y < bottomBoundary || transform.position.y > topBoundary)
 			Destroy(gameObject);
 	}
