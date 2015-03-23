@@ -5,11 +5,11 @@ public class PlayerController : MonoBehaviour {
 
 	public float velocity = 5f;
 
-	private float leftBounds, rightBounds;
+	private float leftBoundary, rightBoundary;
 
 	void Start()
 	{
-		SetWorldBounds();
+		SetBounds();
 	}
 
 	void Update() 
@@ -30,17 +30,17 @@ public class PlayerController : MonoBehaviour {
 			position.x += velocity * Time.deltaTime;
 		}
 
-		transform.position = new Vector3(Mathf.Clamp(position.x, leftBounds, rightBounds), position.y, position.z);
+		transform.position = new Vector3(Mathf.Clamp(position.x, leftBoundary, rightBoundary), position.y, position.z);
 	}
 
-	void SetWorldBounds()
+	void SetBounds()
 	{
 		Camera camera = Camera.main;
 		float shipToCameraDistance = transform.position.z - camera.transform.position.z;
 		float padding = GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.5f;
 		
-		leftBounds = camera.ViewportToWorldPoint(new Vector3(0f, 0f, shipToCameraDistance)).x + padding;
-		rightBounds = camera.ViewportToWorldPoint(new Vector3(1f, 1f, shipToCameraDistance)).x - padding;
+		leftBoundary = camera.ViewportToWorldPoint(new Vector3(0f, 0f, shipToCameraDistance)).x + padding;
+		rightBoundary = camera.ViewportToWorldPoint(new Vector3(1f, 1f, shipToCameraDistance)).x - padding;
 	}
 
 }

@@ -6,14 +6,14 @@ public class EnemyFormation : MonoBehaviour {
 	public GameObject[] enemyPrefabs;
 	public float width = 12f;
 	public float height = 4.5f;
-	public float velocity = 1.25f;
+	public float velocity = 1.5f;
 
-	private float leftWorldBounds, rightWorldBounds;
-	private bool movingLeft = true;
+	private float leftBoundary, rightBoundary;
+	private int direction = -1;
 
 	void Start() 
 	{
-		SetWorldBounds();
+		SetBounds();
 
 		foreach(Transform child in transform)
 		{
@@ -27,34 +27,23 @@ public class EnemyFormation : MonoBehaviour {
 	{
 		Vector3 position = transform.position;
 
-		if (position.x == leftWorldBounds)
+		if (position.x == leftBoundary || position.x == rightBoundary)
 		{
-			movingLeft = false;
-		}
-		else if (position.x == rightWorldBounds)
-		{
-			movingLeft = true;
+			direction *= -1;
 		}
 
-		if (movingLeft)
-		{
-			position.x -= velocity * Time.deltaTime;
-		}
-		else
-		{
-			position.x += velocity * Time.deltaTime;
-		}
-		
-		transform.position = new Vector3(Mathf.Clamp(position.x, leftWorldBounds, rightWorldBounds), position.y, position.z);
+		position.x += direction * velocity * Time.deltaTime;
+				
+		transform.position = new Vector3(Mathf.Clamp(position.x, leftBoundary, rightBoundary), position.y, position.z);
 	}
 
-	void SetWorldBounds()
+	void SetBounds()
 	{
 		Camera camera = Camera.main;
 		float formationToCameraDistance = transform.position.z - camera.transform.position.z;
 		
-		leftWorldBounds = camera.ViewportToWorldPoint(new Vector3(0f, 0f, formationToCameraDistance)).x;
-		rightWorldBounds = camera.ViewportToWorldPoint(new Vector3(1f, 1f, formationToCameraDistance)).x - width;
+		leftBoundary = camera.ViewportToWorldPoint(new Vector3(0f, 0f, formationToCameraDistance)).x;
+		rightBoundary = camera.ViewportToWorldPoint(new Vector3(1f, 1f, formationToCameraDistance)).x - width;
 	}
 
 	void OnDrawGizmos()
