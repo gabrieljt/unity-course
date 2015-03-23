@@ -8,7 +8,7 @@ public class Laser : MonoBehaviour {
 
 	private float bottomBoundary, topBoundary;
 
-	void Start()
+	void Awake()
 	{
 		SetBounds();
 		GetComponent<Rigidbody2D>().velocity = new Vector2(0f, direction * velocity);		

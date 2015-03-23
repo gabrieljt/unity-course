@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	public float velocity = 5f;
+	public float laserSpeedMultiplier = 1f;
+	public float laserFireRate = 0.5f;
+	public int maximumLasers = 3;
 	public GameObject laser;
 
 	private float leftBoundary, rightBoundary, paddingX, paddingY;
@@ -34,11 +37,25 @@ public class PlayerController : MonoBehaviour {
 		transform.position = new Vector3(Mathf.Clamp(position.x, leftBoundary, rightBoundary), 
 		                                 position.y, position.z);
 
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space) && GameObject.FindGameObjectsWithTag("PlayerLaser").Length < maximumLasers)
 		{
-			Instantiate(laser, new Vector3(position.x, position.y + paddingY, position.z), 
-			            Quaternion.identity);
+			InvokeRepeating("Fire", 0.0001f, laserFireRate);
 		}
+
+		if (Input.GetKeyUp(KeyCode.Space))
+		{
+			CancelInvoke("Fire");
+		}
+	}
+
+	void Fire()
+	{
+		Vector3 position = transform.position;
+
+		GameObject playerLaser = Instantiate(laser, new Vector3(position.x, position.y + paddingY, position.z), 
+		                                     Quaternion.identity) as GameObject;
+		playerLaser.GetComponent<Rigidbody2D>().velocity *= laserSpeedMultiplier;
+		playerLaser.tag = "PlayerLaser";
 	}
 
 	void SetBounds()
