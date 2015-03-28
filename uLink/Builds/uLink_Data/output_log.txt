@@ -1,0 +1,40 @@
+Initialize engine version: 4.6.4f1 (99f88340878d)
+GfxDevice: creating device client; threaded=1
+d3d11: failed to create D3D11 device (0x887a0004)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [igdumd32.dll 8.14.10.1930]
+    Renderer: Mobile Intel(R) 945 Express Chipset Family
+    Vendor:   Intel
+    VRAM:     64 MB (via DXGI)
+    Caps:     Shader=20 DepthRT=0 NativeDepth=0 NativeShadow=0 DF16=0 INTZ=0 RAWZ=0 NULL=0 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\uLink.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\uLink.dll into Unity Child Domain
+- Completed reload, in  0.273 seconds
+desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\System.dll (this message is harmless)
+Server Initialized @127.0.0.1:7100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+This uLink evaluation license is temporary. You will need to purchase a full license at muchdifferent.com/ulink. If you've bought uLink from the Asset Store, please contact sales@muchdifferent.com to get your license key.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Player connected from: 127.0.0.1:52742
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+

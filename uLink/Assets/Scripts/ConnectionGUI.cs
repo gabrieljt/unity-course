@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class ConnectionGUI : MonoBehaviour {
 
 	public string serverIP = "127.0.0.1";
 	public int serverPort = 7100;
@@ -12,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour {
 		{
 			serverIP = GUI.TextField (new Rect (120, 10, 100, 20), serverIP);
 			serverPort = int.Parse (GUI.TextField (
-				new Rect (230, 10, 40, 20), serverPort.ToString()));
+				new Rect (230, 10, 40, 20), serverPort.ToString ()));
 
 			if (GUI.Button (new Rect (10, 10, 100, 30), "Connect")) 
 			{
@@ -29,8 +29,8 @@ public class NewBehaviourScript : MonoBehaviour {
 		else 
 		{
 			string ipAddress = uLink.Network.player.ipAddress;
-			string port = uLink.Network.player.port;
-			string status;
+			string port = uLink.Network.player.port.ToString ();
+			string status = string.Empty;
 
 			GUI.Label (new Rect (140, 20, 250, 40), 
 			           "IP Address: " + ipAddress + ":" + port);
@@ -61,6 +61,8 @@ public class NewBehaviourScript : MonoBehaviour {
 	{
 		uLink.Network.DestroyPlayerObjects (player);
 		uLink.Network.RemoveRPCs (player);
+		Debug.Log ("Player @" + player.ipAddress + ":" + player.port +
+		           "disconnected");
 	}
 
 	void uLink_OnFailedToConnect (uLink.NetworkConnectionError error)
@@ -70,8 +72,8 @@ public class NewBehaviourScript : MonoBehaviour {
 
 	void uLink_OnPlayerConnected (uLink.NetworkPlayer player)
 	{
-		Debug.Log ("Player connected from: " +
-		           player.ipAddress + ":" + player.port);
+		Debug.Log ("Player @" + player.ipAddress + ":" + player.port +
+		           "connected");
 	}
 
 }
