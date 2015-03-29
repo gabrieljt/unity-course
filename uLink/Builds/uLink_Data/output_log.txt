@@ -19,22 +19,26 @@ Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\u
 Loading C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\uLink.dll (this message is harmless)
 Loading C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\uLink.dll into Unity Child Domain
-- Completed reload, in  0.273 seconds
+- Completed reload, in  0.152 seconds
 desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\uLink\Builds\uLink_Data\Managed\System.dll (this message is harmless)
-Server Initialized @127.0.0.1:7100
+Connect request sent to Server @127.0.0.1:7100
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-This uLink evaluation license is temporary. You will need to purchase a full license at muchdifferent.com/ulink. If you've bought uLink from the Asset Store, please contact sales@muchdifferent.com to get your license key.
+Connected to server @127.0.0.1:7100
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-Player connected from: 127.0.0.1:52742
+Local Port: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Network aware player's object instantiated by client
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 

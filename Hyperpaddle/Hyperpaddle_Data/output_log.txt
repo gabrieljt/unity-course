@@ -1,68 +1,36 @@
 Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
+d3d11: failed to create D3D11 device (0x887a0004)
+GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.0]
-    Renderer: NVIDIA GeForce 9800 GT   (ID=0x614)
-    Vendor:   NVIDIA
-    VRAM:     1005 MB
+    Version:  Direct3D 9.0c [igdumd32.dll 8.14.10.1930]
+    Renderer: Mobile Intel(R) 945 Express Chipset Family
+    Vendor:   Intel
+    VRAM:     64 MB (via DXGI)
+    Caps:     Shader=20 DepthRT=0 NativeDepth=0 NativeShadow=0 DF16=0 INTZ=0 RAWZ=0 NULL=0 RESZ=0 SlowINTZ=0
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.085 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.121 seconds
+desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
 <RI> Initializing input.
+XInput1_3.dll not found.
 <RI> Input initialized.
-Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Development\gamedesign\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 4.451397 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 7.107942 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 304.
-Total: 0.851434 ms (FindLiveObjects: 0.031518 ms CreateObjectMapping: 0.016611 ms MarkObjects: 0.166964 ms  DeleteObjects: 0.006388 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 52.892448 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 243.
-Total: 0.913620 ms (FindLiveObjects: 0.023426 ms CreateObjectMapping: 0.015333 ms MarkObjects: 0.188261 ms  DeleteObjects: 0.114149 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 3.527980 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 236.
-Total: 0.779878 ms (FindLiveObjects: 0.013629 ms CreateObjectMapping: 0.015333 ms MarkObjects: 0.173353 ms  DeleteObjects: 0.011500 ms)
-
-Writing to file C:/Users/Gabriel/AppData/LocalLow/DefaultCompany/Hyperpaddle\hyperpaddle-scores.bin
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-UnloadTime: 2.536414 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 238.
-Total: 1.009880 ms (FindLiveObjects: 0.010648 ms CreateObjectMapping: 0.015759 ms MarkObjects: 0.318169 ms  DeleteObjects: 0.003833 ms)
-
-UnloadTime: 0.607376 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 281.
-Total: 0.999232 ms (FindLiveObjects: 0.031944 ms CreateObjectMapping: 0.016185 ms MarkObjects: 0.213817 ms  DeleteObjects: 0.008944 ms)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 270.
+Total: 1.656082 ms (FindLiveObjects: 0.050028 ms CreateObjectMapping: 0.032069 ms MarkObjects: 0.352126 ms  DeleteObjects: 0.017317 ms)
 
 OnStatusChanged: Connect
  
@@ -124,7 +92,7 @@ No open matches available.
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-CreateRoom: HyperpaddleArena-bff4a2d76d794f2d842f0628fad731ff
+CreateRoom: HyperpaddleArena-8748993279ad4364bee5b5e116fd46aa
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
@@ -161,6 +129,1392 @@ OnEvent: Event 255.
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
 Registered PhotonView: 1001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+d3d11: failed to create D3D11 device (0x887a0004)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [igdumd32.dll 8.14.10.1930]
+    Renderer: Mobile Intel(R) 945 Express Chipset Family
+    Vendor:   Intel
+    VRAM:     64 MB (via DXGI)
+    Caps:     Shader=20 DepthRT=0 NativeDepth=0 NativeShadow=0 DF16=0 INTZ=0 RAWZ=0 NULL=0 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.181 seconds
+desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Gabriel\Documents\GitHub\unity-course\Hyperpaddle\Hyperpaddle_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 16.463974 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 270.
+Total: 3.195431 ms (FindLiveObjects: 0.065422 ms CreateObjectMapping: 0.035918 ms MarkObjects: 0.591366 ms  DeleteObjects: 0.021166 ms)
+
+OnStatusChanged: Connect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Connected to NameServer.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: EncryptionEstablished
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: Disconnect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: Connect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Connected to masterserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: EncryptionEstablished
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 226.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OperationResponse 229: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 230.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OperationResponse 225: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: Disconnect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: Connect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Connected to gameserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: EncryptionEstablished
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OperationResponse 226: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGeneraOed/UnityEngineDebug.vent 255.
+ 
+(Fi
+l
+ename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 255.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Registered PhotonView: 2001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Registered PhotonView: 1001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Registered PhotonView: 2001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "ResetBallPosition" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: ResetBallPosition
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: ResetBallPosition
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(FilEvent 206.
+ 
+(Filenamme: C:/builildslave/uni/tyild/artifacts/StandalonePonePlayerGenerated/UnityEngineDebug.cLinp Line: 56)
+
+e: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvenOnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Litne: 56)
+
+: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: OnEvent: Event 206.
+ 
+(FilEvent 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+name: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "CollisionRPC" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: CollisionRPC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Sending RPC "ResetBallPosition" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: ResetBallPosition
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 200.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Received RPC: ResetBallPosition
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnStatusChanged: Disconnect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Network destroy Instantiated GO: Multiplayer Paddle(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Network destroy Instantiated GO: Multiplayer Paddle(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OnEvent: Event 254.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+HandleEventLeave for player ID: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Network destroy Instantiated GO: Multiplayer Paddle(Clone)
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
