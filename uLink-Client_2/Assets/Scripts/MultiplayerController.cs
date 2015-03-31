@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MultiplayerController : MonoBehaviour {
+public class MultiplayerController : uLink.MonoBehaviour {
 
 	public bool isControllable = false;
 	public Transform player;
@@ -11,6 +11,9 @@ public class MultiplayerController : MonoBehaviour {
 	
 	void Awake () 
 	{
+		if (GetComponent<uLinkNetworkView> ().isMine) 
+			isControllable = true;
+
 		if (camera == null && Camera.main != null)
 			camera = Camera.main;
 		
@@ -53,6 +56,20 @@ public class MultiplayerController : MonoBehaviour {
 			player.transform.position = new Vector3(0f, 3f, 0f);
 			player.transform.rotation = new Quaternion(50f, 50f, 50f, 0f);
 		}
+
+		if (GUI.Button (new Rect (20, 170, 100, 50), "Toss Us RPC!")) 
+		{
+			networkView.RPC	("TossRPC", uLink.RPCMode.All, "RPC @" + 
+			                 System.DateTime.Now.Ticks);
+		}
+	}
+
+	[RPC]
+	void TossRPC (string args)
+	{
+		Debug.Log ("RPC received @" + args);
+		player.transform.position = new Vector3(0f, Random.Range (1f, 10f), 0f);
+		player.transform.rotation = new Quaternion(50f, 50f, 50f, 0f);
 	}
 	
 }

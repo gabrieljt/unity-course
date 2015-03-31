@@ -13,7 +13,6 @@ public class SpawnPoint : MonoBehaviour {
 	void uLink_OnConnectedToServer ()
 	{
 		playerPrefab = uLink.Network.Instantiate (playerPrefab, transform.position, transform.rotation, 0);
-		playerPrefab.GetComponent<MultiplayerController> ().isControllable = true;
 		Debug.Log ("Network aware player's object instantiated by client");
 	}
 
